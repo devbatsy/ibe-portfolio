@@ -1,0 +1,145 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+#toggleInput{
+	opacity: 0;
+}
+/* #toggleInput:checked ~ .menu{
+	transform:translateY(25px) translateX(0);
+} */
+/* remember to replace the input with hover */
+#introCont{
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	padding:0 10px;
+	padding-top: 150px;
+	padding-left:50px
+}
+.postCont
+{
+	padding:10px;
+	padding-left:50px;
+}
+#frontH1Text{
+	text-align:left;
+	max-width:90%
+}
+#textWriteUP{
+	text-align:left
+}
+#menu{
+	display: flex;
+	/* transform: translateY(-50%); */
+}
+#menu2{
+	display: none;
+	/* transform: translateY(-50%); */
+}
+.hover-list-content:hover{
+	color:red;/*change this later */
+	border-bottom: 1px solid red;
+}
+#profileBg::after{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width:100%;
+	border-radius: inherit;
+	top:-5px;
+	left:5px;
+	background-image:url('img/ibe.jpg');
+	background-position: inherit;
+	background-repeat: inherit;
+	background-size: inherit;
+	/* z-index: 2; */
+}
+.sizedText{
+	font-size:20px
+}
+#postNav
+{
+	justify-content: space-between;
+}
+#viewBottomText
+{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: none;
+}
+.bounce{
+	transition: all linear .3s;
+	cursor: pointer;
+}
+.bounce:active{
+	transform: scale(1.05);
+}
+.overlay_remove_padding
+{
+	padding-left: 50px;
+}
+@media screen and (max-width:600px)
+{
+	#menu{
+		display: none;
+	}
+	#menu2
+	{
+		display: flex;
+	}
+	#introCont
+	{
+		flex-direction: column;	
+		align-items: center;
+		padding:0 10px;
+		padding-top: 80px;
+	}
+	.postCont
+	{
+		padding:10px;
+		padding-bottom: 30px;
+		/* height: inherit; */
+	}
+	#textWriteUP{
+		text-align:center;
+	}
+	#frontH1Text{
+		text-align:center;
+		font-size:30px;
+	}
+	.sizedText{
+		font-size:18px
+	}
+	#viewText
+	{
+		display: none;
+	}
+	#postNav
+	{
+		justify-content: center;
+	}
+	#viewBottomText{
+		display: block;
+	}
+	.workTabs
+	{
+		justify-content: center;
+	}
+	.hover-list-content:hover{
+		color:red;
+		border: none;
+	}
+	.overlay_remove_padding
+	{
+		padding-left: 0;
+	}
+}
+@media screen and (min-width:600px)
+{
+	#mobile-btn{
+		display: none;
+	}
+}
